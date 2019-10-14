@@ -1,0 +1,92 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Election Manager by Kuba Pietruszewski</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="todo app task">
+	<meta name="keywords" content="ToDo Manager - recruitmant task">
+	<link rel="stylesheet" href="src/style/css/main.css">
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="src/script/script.js"></script>
+    <script>
+            var bar = new ProgressBar.Line(container, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+  }
+});
+
+bar.animate(1.0);  // Number from 0.0 to 1.0
+    </script>
+</head>
+<body>
+    <header id="top">
+        <h1>mealex.</h1>
+        <nav>
+                <a href="#top" class="myButton">Home</a>
+                <a href="#about" class="myButton">About</a>
+                <a href="#service" class="myButton">Skills</a>
+                <a href="#portfolio" class="myButton">Portfolio</a>
+                <a href="#contact" class="myButton">Contact</a>
+        </nav>
+        <div class="info">
+            <h2>Alex Vidal</h2>
+            <h3>Full Stack Developer</h3>
+            <button class="dark">Hire me</button>
+            <button class="white">Explore more</button>
+        </div>
+        <div class="boy_bg"></div>
+        <div class="boy"></div>
+        <div class="shape"></div>
+        <div class="shape2"></div>
+    </header>
+    <main>
+        <section id="about">
+            <h3>About</h3>
+            <p>
+                Lorem ipsum dolor sit amet quam eget erat sit amet dui aliquam erat. Praesent vitae ipsum dolor sit amet, consectetuer adipiscing dolor urna ante, porta lorem, pretium porttitor. Class aptent taciti sociosqu ad litora torquent per inceptos hymenaeos. Curabitur magna ultrices posuere ante congue eu, egestas imperdiet tempor, pede ultrices sit amet.
+            </p>
+            <button class="dark">
+                Download my cv
+            </button>
+        </section>
+        <section id="service">            
+            <h3>Skills</h3>
+            <div id="skills" class="container">
+                <div class="item">
+                    <p>Html/css</p>
+                    <div id="myProgress">
+                        <div id="myBar">10%</div>
+                      </div>
+                </div>
+            </div>
+            <h3>What i do</h3>
+            <div id="whatido" class="container">
+                <div class="item">
+                    <h4>Front-end</h4>
+                    <p>Lorem ipsum dolor sit amet quam eget erat sit amet dui aliquam erat. Praesent vitae ipsum dolor sit amet, consectetuer adipiscing dolor urna ante, porta lorem, pretium porttitor. Class aptent taciti sociosqu ad litora torquent per inceptos hymenaeos.</p>
+                </div>
+                <div class="item">
+                    <h4>Back-end</h4>
+                    <p>Lorem ipsum dolor sit amet quam eget erat sit amet dui aliquam erat. Praesent vitae ipsum dolor sit amet, consectetuer adipiscing dolor urna ante, porta lorem, pretium porttitor. Class aptent taciti sociosqu ad litora torquent per inceptos hymenaeos.</p>
+                </div>
+                <div class="item">
+                    <h4>Consultancy</h4>
+                    <p>Lorem ipsum dolor sit amet quam eget erat sit amet dui aliquam erat. Praesent vitae ipsum dolor sit amet, consectetuer adipiscing dolor urna ante, porta lorem, pretium porttitor. Class aptent taciti sociosqu ad litora torquent per inceptos hymenaeos.</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="portfolio">bla</section>
+        <section id="contact">bla</section> -->
+    </main>
+    <footer>
+    </footer>
+</body>
