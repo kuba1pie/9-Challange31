@@ -1,6 +1,6 @@
 <head>
 	<meta charset="UTF-8">
-	<title>Election Manager by Kuba Pietruszewski</title>
+	<title>Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="todo app task">
 	<meta name="keywords" content="ToDo Manager - recruitmant task">
@@ -10,21 +10,20 @@
     <script src="src/script/script.js"></script>
     <script>
             var bar = new ProgressBar.Line(container, {
-  strokeWidth: 4,
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#FFEA82',
-  trailColor: '#eee',
-  trailWidth: 1,
-  svgStyle: {width: '100%', height: '100%'},
-  from: {color: '#FFEA82'},
-  to: {color: '#ED6A5A'},
-  step: (state, bar) => {
-    bar.path.setAttribute('stroke', state.color);
-  }
-});
-
-bar.animate(1.0);  // Number from 0.0 to 1.0
+            strokeWidth: 4,
+            easing: 'easeInOut',
+            duration: 1400,
+            color: '#FFEA82',
+            trailColor: '#eee',
+            trailWidth: 1,
+            svgStyle: {width: '100%', height: '100%'},
+            from: {color: '#FFEA82'},
+            to: {color: '#ED6A5A'},
+            step: (state, bar) => {
+                bar.path.setAttribute('stroke', state.color);
+            }
+            });
+            bar.animate(1.0);  // Number from 0.0 to 1.0
     </script>
 </head>
 <body>
@@ -82,11 +81,68 @@ bar.animate(1.0);  // Number from 0.0 to 1.0
                     <h4>Consultancy</h4>
                     <p>Lorem ipsum dolor sit amet quam eget erat sit amet dui aliquam erat. Praesent vitae ipsum dolor sit amet, consectetuer adipiscing dolor urna ante, porta lorem, pretium porttitor. Class aptent taciti sociosqu ad litora torquent per inceptos hymenaeos.</p>
                 </div>
+            </div>    
+        </section>
+        <section id="portfolio">
+            <h3>My recent works</h3>
+            <div id="works" class="container">
+                <div id="project1" class="item">
+                    <div id="1s" class="shadowbox">
+                        <h5>Project Title</h5>
+                    </div>
+                </div>
+                <div id="project2" class="item">
+                    <div id="2s" class="shadowbox">
+                    <h5>Project Title</h5>
+                    </div>
+                </div>
+                <div id="project3" class="item">
+                    <div id="3s" class="shadowbox">
+                    <h5>Project Title</h5>
+                    </div>
+                </div>
+                <div id="project4" class="item">
+                    <div id="1s" class="shadowbox">
+                        <h5>Project Title</h5>
+                    </div>
+                </div>
+                <div id="project5" class="item">
+                    <div id="2s" class="shadowbox">
+                    <h5>Project Title</h5>
+                    </div>
+                </div>
+                <div id="project6" class="item">
+                    <div id="3s" class="shadowbox">
+                    <h5>Project Title</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="white">Load more</button>
+        </section>
+        <section id="exp">
+            <div class="container">
+                <div class="item">
+                    <span class="number">10</span>
+                    <p>Years Experienve</p>
+                </div>
+                <div class="item">
+                    <span class="number">120</span>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="item">
+                    <span class="number" id="tick">10</span>
+                    <p>Seconds on this site!<br>What are you waiting for?</p>
+                </div>
             </div>
         </section>
-        <!-- <section id="portfolio">bla</section>
-        <section id="contact">bla</section> -->
+        <section id="contact">
+            <h3>Contact</h3>
+            <button class="white">Hire me</button>
+        </section>
     </main>
     <footer>
+        2019. All Rights Reserved
+        <div>Fb</div>
+        <div>Top</div>
     </footer>
 </body>
