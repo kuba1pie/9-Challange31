@@ -40,7 +40,8 @@ html body {
   flex-direction: column;
   min-height: 100%;
   background-color: #fff;
-  font-family: "Cormorant", serif; }
+  font-family: "Cormorant", serif;
+  scroll-behavior: smooth }
 
 header {
   flex: 1; }
